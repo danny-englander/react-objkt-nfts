@@ -18,6 +18,14 @@ query objkts {
       ophash
       symbol
       supply
+      tags {
+        id
+        tag_id
+        tag {
+          name
+          token_count
+        }
+      }
       fa {
         contract
         collection_id

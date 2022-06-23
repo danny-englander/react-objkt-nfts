@@ -36,8 +36,8 @@ const ObjktRender = () => {
           {data.objkts.map((item, contract_id) => (
             <li
               key={item.token_id}
-              id={`Item-${item.token_id}`}
-              // className={`${card.Item} ${ item.tags.map(tag_item => `tag-${tag_item.tag.name}`).join(" ") }`}
+              id={`item-${item.token_id}`}
+              className={`${card.Item} ${ item.tags.map(tag_item => `tag-${tag_item.tag.name}`).toString().replaceAll(' ', '-').replaceAll(',', ' ')}`}
             >
 
               <div className={card.ItemInner}>
