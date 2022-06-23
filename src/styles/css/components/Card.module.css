@@ -1,0 +1,56 @@
+/* stylelint-disable */
+/* stylelint-enable */
+.Items {
+  margin-left: -25px;
+  margin-right: -25px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.Items:after {
+  clear: both;
+}
+.Items > * {
+  padding-left: 25px;
+  padding-right: 25px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-height: 1px;
+  width: 50%;
+}
+@media (min-width: 64em) {
+  .Items {
+    margin-left: -25px;
+    margin-right: -25px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .Items:after {
+    clear: both;
+  }
+  .Items > * {
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-height: 1px;
+    width: 33.3333333333%;
+  }
+}
+
+.Img {
+  width: 100%;
+  height: auto;
+  line-height: 0;
+  height: 360px;
+  object-fit: cover;
+}
+
+.Item {
+  margin-bottom: 40px;
+}
+
+.ItemInner {
+  border: 2px solid rgb(0, 186, 196);
+}
+
+/*# sourceMappingURL=Card.module.css.map */

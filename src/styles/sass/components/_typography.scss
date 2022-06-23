@@ -1,0 +1,39 @@
+@use "../../../../node_modules/sass-rem" as rem;
+
+p,
+li {
+  font-size: rem.convert(18px);
+  line-height: rem.convert(32px);
+  letter-spacing: rem.convert(1px);
+}
+
+.h1,
+h1 {
+  font-size: rem.convert(30px);
+  line-height: rem.convert(38px);
+  margin-bottom: rem.convert(19px);
+  letter-spacing: rem.convert(1.5px);
+  font-weight: 400;
+
+  @include mq($from: large) {
+    font-size: rem.convert(36px);
+    line-height: rem.convert(44px);
+    margin-bottom: rem.convert(26px);
+  }
+}
+
+.h2,
+h2 {
+  font-size: rem.convert(20px);
+  line-height: rem.convert(25px);
+  margin-bottom: rem.convert(14px);
+  letter-spacing: rem.convert(1px);
+  font-weight: 400;
+  text-transform: capitalize;
+
+  @include mq($from: large) {
+    font-size: rem.convert(24px);
+    line-height: rem.convert(29px);
+    margin-bottom: rem.convert(14px);
+  }
+}

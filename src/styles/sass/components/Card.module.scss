@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+// Settings file.
+@import "../component-settings";
+
+.Items {
+  @include grid-cols(2);
+
+    @include mq($from: large) {
+        @include grid-cols(3);
+    }
+}
+
+.Img {
+  width: 100%;
+  height: auto;
+  line-height: 0;
+  height: 360px;
+  object-fit: cover;
+}
+
+.Item {
+  margin-bottom: 40px;
+}
+
+.ItemInner {
+  border: 2px solid rgb(0, 186, 196);
+
+}
