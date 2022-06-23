@@ -3,27 +3,37 @@
 // Settings file.
 @import "../component-settings";
 
-.Items {
-  @include grid-cols(2);
-
-    @include mq($from: large) {
-        @include grid-cols(3);
-    }
+.Elements {
+  // @include grid-cols(2);
+  @include mq($from: large) {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .Img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   line-height: 0;
-  height: 360px;
-  object-fit: cover;
+  // height: 360px;
+  // object-fit: cover;
 }
 
-.Item {
-  margin-bottom: 40px;
+.Element {
+  display: flex;
+  padding: 1rem;
+  width: 33.33%;
 }
 
-.ItemInner {
-  border: 2px solid rgb(0, 186, 196);
-
+.ElementInner {
+  background-color: white;
+  border-radius: 0.25rem;
+  // box-shadow: 0 20px 40px -14px rgb(0 0 0 / 25%);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 1px 17px 7px rgba(220, 220, 220, 0.45);
 }
