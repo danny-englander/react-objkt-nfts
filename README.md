@@ -24,3 +24,15 @@ This project pulls in one or more Objkt.com NFT collections as a sort of brochur
 There is a custom query in `ObjktQuery.jsx` that pulls in a custom graphQL query from the Objkt.com API endpoint here: [https://data.objkt.com/explore/](https://data.objkt.com/explore/).
 
 To view Objkt's API documentation, go to [https://data.objkt.com/docs/](https://data.objkt.com/docs/)
+
+## TODO
+
+- Theme header
+- Theme footer
+- Use local images
+- Implement responsive images
+- Implement webP image formats
+
+## Roadmap
+
+- TBD
