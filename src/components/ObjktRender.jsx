@@ -12,11 +12,12 @@ const ObjktRender = () => {
   // Define main data arrays, add more as needed.
   const [data0, setData0] = useState({ objkts: [] })
   const [data1, setData1] = useState({ objkts: [] })
-  // Define the title from the array key, add more as needed.
+  // Define the collection title.
   const [mainTitle0, setMainTitle0] = useState('')
-  const [desc0, setDesc0] = useState('')
-
   const [mainTitle1, setMainTitle1] = useState('')
+
+  // Define the collection description.
+  const [desc0, setDesc0] = useState('')
   const [desc1, setDesc1] = useState('')
 
   useEffect(() => {
@@ -30,12 +31,11 @@ const ObjktRender = () => {
         console.log(result)
         // Set the main data array.
         setData0({ objkts: result.fa[0].tokens })
-
         setData1({ objkts: result.fa[1].tokens })
+
         // Set the title for use in HTML.
         setMainTitle0(result.fa[0].name)
         setDesc0(result.fa[0].description)
-
         setMainTitle1(result.fa[1].name)
         setDesc1(result.fa[1].description)
       } catch {
@@ -59,8 +59,14 @@ const ObjktRender = () => {
             <h2>{desc0}</h2>
 
             <ul className={card.Elements}>
-              {data0.objkts.map((item, token_id) => (
-                <CardElement card={card} item={item} />
+              {data0.objkts.map((item) => (
+                <li
+                  key={item.token_id}
+                  id={`item-${item.token_id}`}
+                  className={`${card.Element}`}
+                >
+                  <CardElement card={card} item={item} />
+                </li>
               ))}
             </ul>
           </TabPanel>
@@ -68,10 +74,15 @@ const ObjktRender = () => {
           <TabPanel>
             <h1>{mainTitle1}</h1>
             <h2>{desc1}</h2>
-
             <ul className={card.Elements}>
-              {data1.objkts.map((item, token_id) => (
-                <CardElement card={card} item={item} />
+              {data1.objkts.map((item) => (
+                <li
+                  key={item.token_id}
+                  id={`item-${item.token_id}`}
+                  className={`${card.Element}`}
+                >
+                  <CardElement card={card} item={item} />
+                </li>
               ))}
             </ul>
           </TabPanel>

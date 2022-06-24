@@ -1,12 +1,13 @@
 import './App.css';
 import ObjktRender from './components/ObjktRender';
+import Header from './components/Header';
 import './styles/css/styles.css'
 import React from 'react'
 
 function App() {
   return (
     <div className="App">
-      <header className="header">The main site header</header>
+      <Header />
       <ObjktRender />
     </div>
   );
