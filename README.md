@@ -19,7 +19,7 @@ Thereafter, you can run `npm run start` to open the webpage. If you want to chan
 
 ## Methodology
 
-This porject pulls in one or more Objkt.com NFT collections as a sort of brochure site; that is to say, this does not have anything to do with NFT minting which is beyond the current scope of the project.
+This project pulls in one or more Objkt.com NFT collections as a sort of brochure site; that is to say, this does not have anything to do with NFT minting which is beyond the current scope of the project.
 
 There is a custom query in `ObjktQuery.jsx` that pulls in a custom graphQL query from the Objkt.com API endpoint here: [https://data.objkt.com/explore/](https://data.objkt.com/explore/).
 
