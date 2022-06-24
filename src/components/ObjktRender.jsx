@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import * as Constants from './ObjktQuery'
-import CardElement from './CardElement'
+import ObjktCard from './ObjktCard'
 // React accessible tabs - https://github.com/reactjs/react-tabs.
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 // CSS modules.
@@ -65,7 +65,7 @@ const ObjktRender = () => {
                   id={`item-${item.token_id}`}
                   className={`${card.Element}`}
                 >
-                  <CardElement card={card} item={item} />
+                  <ObjktCard card={card} item={item} />
                 </li>
               ))}
             </ul>
@@ -81,7 +81,7 @@ const ObjktRender = () => {
                   id={`item-${item.token_id}`}
                   className={`${card.Element}`}
                 >
-                  <CardElement card={card} item={item} />
+                  <ObjktCard card={card} item={item} />
                 </li>
               ))}
             </ul>

@@ -2,7 +2,7 @@ import React from 'react'
 import LazyLoad from 'react-lazyload'
 import LazyPlaceholder from './LazyPlaceholder'
 
-const CardElement = ({ item, card }) => {
+const ObjktCard = ({ item, card }) => {
   return (
     <>
       <div className={card.ElementInner}>
@@ -32,4 +32,4 @@ const CardElement = ({ item, card }) => {
   )
 }
 
-export default CardElement
+export default ObjktCard
