@@ -2,12 +2,13 @@ export const GRAPHQL_API = 'https://data.objkt.com/v2/graphql'
 
 export const GET_OBJKT_QUERY = `
 query objkts {
-  fa(where: {contract: {_in: ["KT1UjcUAQWjNy4mYqUKwmBgEbu93aoos5qq5", "KT1W7eBKSVZB3xhwXCX8PpMivbK19wgh21QS"]}}) {
+  fa(where: {contract: {_in: ["KT1W7eBKSVZB3xhwXCX8PpMivbK19wgh21QS", "KT1UjcUAQWjNy4mYqUKwmBgEbu93aoos5qq5"]}}, order_by: {name: asc}) {
     collection_id
     collection_type
     description
     contract
-    tokens(order_by: {token_id: asc}, where: {supply: {_gte: "1"}}) {
+    name
+    tokens(order_by: {token_id: desc}, where: {supply: {_gte: "1"}}) {
       display_uri
       description
       token_id
@@ -36,7 +37,7 @@ query objkts {
       }
     }
   }
-  listing(where: {fa_contract: {_in: ["KT1UjcUAQWjNy4mYqUKwmBgEbu93aoos5qq5", "KT1W7eBKSVZB3xhwXCX8PpMivbK19wgh21QS"]}}) {
+  listing(where: {fa_contract: {_in: ["KT1W7eBKSVZB3xhwXCX8PpMivbK19wgh21QS", "KT1UjcUAQWjNy4mYqUKwmBgEbu93aoos5qq5"]}}) {
     fa_contract
     id
     price
@@ -47,5 +48,4 @@ query objkts {
     }
   }
 }
-
 `

@@ -1,0 +1,26 @@
+@use "../../../../node_modules/sass-rem" as rem;
+
+.react-tabs {
+}
+
+ul.react-tabs__tab-list {
+  display: flex;
+  border-bottom: 1px solid $c_medium_gray;
+}
+
+li.react-tabs__tab {
+  margin: 0 0 -1px 0;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+li.react-tabs__tab--selected {
+  color: $c_teal;
+  border: 1px solid $c_medium_gray;
+  border-top: 3px solid $c_teal;
+  border-bottom: 1px solid #fff;
+}

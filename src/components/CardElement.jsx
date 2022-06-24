@@ -25,13 +25,17 @@ const CardElement = ({ item, card }) => {
             />
           </LazyLoad>
 
-          <a
-            href={`https://objkt.com/asset/${item.fa.contract}/${item.token_id}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>{item.name}</h2>
-          </a>
+          <div className={card.Content}>
+            <a
+              href={`https://objkt.com/asset/${item.fa.contract}/${item.token_id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h2>{item.name}</h2>
+            </a>
+
+            <p>{item.description}</p>
+          </div>
         </div>
       </li>
     </>
