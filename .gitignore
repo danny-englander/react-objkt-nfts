@@ -23,3 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 .vscode/snipsnap.code-snippets
 src/styles/css/components/*.css.map
+src/styles/css/**/*.css.map

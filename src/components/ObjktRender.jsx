@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import * as Constants from './ObjktQuery'
 import CardElement from './CardElement'
@@ -31,7 +31,11 @@ const ObjktRender = () => {
   return (
     <>
       <div className={container.Layout}>
-        <CardElement data={data} card={card} />
+        <ul className={card.Elements}>
+          {data.objkts.map((item, token_id) => (
+            <CardElement card={card} item={item} />
+          ))}
+        </ul>
       </div>
     </>
   )

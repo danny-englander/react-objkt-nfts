@@ -1,2 +1,2 @@
-@media (min-width:64em){.Elements{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0}}.Img{height:auto;line-height:0;max-width:100%}.Element{display:flex;padding:1rem;width:33.33%}.ElementInner{background-color:#fff;border-radius:.25rem;box-shadow:0 1px 17px 7px hsla(0,0%,86%,.45);display:flex;flex-direction:column;overflow:hidden}
+@media (min-width:64em){.Elements{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0}}.Img{height:auto;line-height:0;max-width:100%;width:100%}.Element{padding:1.625rem;width:33.33%}.ElementInner{background-color:#fff;border-radius:10px;box-shadow:0 20px 40px -14px rgba(0,0,0,.25);display:flex;flex-direction:column;overflow:hidden}
 /*# sourceMappingURL=Card.module.css.map */
