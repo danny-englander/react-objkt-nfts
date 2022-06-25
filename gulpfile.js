@@ -43,13 +43,13 @@ function browserSyncReload(cb) {
   cb();
 }
 
-const img = () => src("./assets/img-src/**/*.{jpg,png}")
+const img = () => src("./src/assets/nft-src/**/*.{jpg,png}")
   .pipe(sharpResponsive({
     formats: [
-      { width: 1000, format: "jpeg" },
-      { width: 1000, format: "webp" },
+      { width: 800, format: "jpeg" },
+      { width: 800, format: "webp" },
     ]
-  })).pipe(dest("./assets/img-dist"));
+  })).pipe(dest("./public/assets/nft-dist"));
 
 const render_img = series(parallel(img))
 

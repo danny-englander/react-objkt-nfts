@@ -28,7 +28,8 @@ const ObjktRender = () => {
         })
         // Define the data result.
         const result = queryResult.data.data
-        // console.log(result)
+        console.log(result)
+
         // Set the main data array.
         setData0({ objkts: result.fa[0].tokens })
         setData1({ objkts: result.fa[1].tokens })

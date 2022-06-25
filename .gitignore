@@ -25,3 +25,4 @@ yarn-error.log*
 .vscode/snipsnap.code-snippets
 src/styles/css/**/*.css.map
 *.code-workspace
+src/assets/nft-src/

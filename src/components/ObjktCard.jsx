@@ -4,14 +4,23 @@ const ObjktCard = ({ item, card }) => {
   return (
     <>
       <div className={card.ElementInner}>
-        <img
-          className={card.Img}
-          src={`https://ipfs.io/ipfs/${item.thumbnail_uri.slice(7)}`}
-          alt={item.name}
-          width="350"
-          height="280"
-          loading="lazy"
-        />
+        <picture>
+          <figure>
+            <source
+              srcset={`/assets/nft-dist/${item.fa.contract}-${item.token_id}.webp`}
+              type="image/webp"
+            />
+
+            <img
+              src={`/assets/nft-dist/${item.fa.contract}-${item.token_id}.jpg`}
+              className={card.Img}
+              alt={item.name}
+              width="800"
+              height="1000"
+              loading="lazy"
+            />
+          </figure>
+        </picture>
 
         <div className={card.Content}>
           <h2>

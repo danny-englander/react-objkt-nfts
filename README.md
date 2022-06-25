@@ -2,6 +2,12 @@
 
 ![Screen Shot of the app](cover.png 'Screen Shot of the app')
 
+## Demo site
+
+[https://objkt-nfts.netlify.app/](https://objkt-nfts.netlify.app/)
+
+## Overview
+
 This project pulls in my artwork that I have listed on [Objkt.com](https://objkt.com/collection/KT1UjcUAQWjNy4mYqUKwmBgEbu93aoos5qq5), an NFT marketplace built upon the Tezos cryptocurrency blockchain. This React app uses Objkt's API via graphQL to pull in data.
 
 ## Getting started
@@ -41,13 +47,19 @@ This points to the two smart contract ids for my collections. You can copy and p
 
 To view Objkt's API documentation, go to [https://data.objkt.com/docs/](https://data.objkt.com/docs/)
 
+## CSS / SCSS
+
+This project implements the latest Sass module methods using `@use` and `@forward` dropping usage of the now legacy `@import` method.
+
+The React components use [CSS modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/).
+
 ## TODO
 
 - Theme header
 - Theme footer
-- Use local images
-- Implement responsive images
-- Implement webP image formats
+- <del>Use local images</del>
+- <del>Implement responsive images</del>
+- <del>Implement webP image formats</del>
 - Demo site on Netlify
 - Upgrade to Node18
 
