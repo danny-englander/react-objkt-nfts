@@ -53,6 +53,12 @@ This project implements the latest Sass module methods using `@use` and `@forwar
 
 The React components use [CSS modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/).
 
+## Performance
+
+To measure performance on this site, ensure you are using the production build with an incognito browser. Here is the Lighthouse score below.
+
+![Lighthouse score](performance.png 'Lighthouse score')
+
 ## TODO
 
 - Theme header
@@ -60,8 +66,8 @@ The React components use [CSS modules](https://create-react-app.dev/docs/adding-
 - <del>Use local images</del>
 - <del>Implement responsive images</del>
 - <del>Implement webP image formats</del>
-- Demo site on Netlify
-- Upgrade to Node18
+- <del>Demo site on Netlify</del>
+- Upgrade to Node v18
 
 ## Roadmap
 
