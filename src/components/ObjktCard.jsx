@@ -1,20 +1,17 @@
 import React from 'react'
-import LazyLoad from 'react-lazyload'
-import LazyPlaceholder from './LazyPlaceholder'
 
 const ObjktCard = ({ item, card }) => {
   return (
     <>
       <div className={card.ElementInner}>
-        <LazyLoad height={280} offset={100} placeholder={<LazyPlaceholder />}>
-          <img
-            className={card.Img}
-            src={`https://ipfs.io/ipfs/${item.thumbnail_uri.slice(7)}`}
-            alt={item.name}
-            width="350"
-            height="280"
-          />
-        </LazyLoad>
+        <img
+          className={card.Img}
+          src={`https://ipfs.io/ipfs/${item.thumbnail_uri.slice(7)}`}
+          alt={item.name}
+          width="350"
+          height="280"
+          loading="lazy"
+        />
 
         <div className={card.Content}>
           <a

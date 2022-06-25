@@ -27,10 +27,15 @@ The key part of the query is:
 
 ```sql
 query objkts {
-  fa(where: {contract: {_in: ["KT1W7eBKSVZB3xhwXCX8PpMivbK19wgh21QS", "KT1UjcUAQWjNy4mYqUKwmBgEbu93aoos5qq5"]}}, order_by: {name: asc}) {...
+  fa(where: {contract:
+  {_in:
+  ["KT1W7eBKSVZB3xhwXCX8PpMivbK19wgh21QS",
+   "KT1UjcUAQWjNy4mYqUKwmBgEbu93aoos5qq5"]
+   }},
+   order_by: {name: asc}) {...
 ```
 
-This points to the two contract ids for my collections. You can copy and paste the entire query into Objkt's graphQL explorer and adjust to your own liking within the endpoint linked to above.
+This points to the two smart contract ids for my collections. You can copy and paste the entire query into Objkt's graphQL explorer and adjust to your own liking within the endpoint linked to above.
 
 To view Objkt's API documentation, go to [https://data.objkt.com/docs/](https://data.objkt.com/docs/)
 

@@ -1,9 +1,12 @@
 import React from 'react'
+import container from '../styles/css/components/Container.module.css'
 
 const Header = () => {
   return (
     <>
-      <header className="header">The main site header</header>
+      <header className={container.Layout}>
+        <div className="">The main site header</div>
+      </header>
     </>
   )
 }
