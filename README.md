@@ -2,7 +2,7 @@
 
 ![Screen Shot of the app](cover.png 'Screen Shot of the app')
 
-This project pulls in my artwork that I have listed on [Objkt.com](https://objkt.com/collection/KT1UjcUAQWjNy4mYqUKwmBgEbu93aoos5qq5), an NFT marketplace. This React app uses Objkt's API via graphQL to pull in data.
+This project pulls in my artwork that I have listed on [Objkt.com](https://objkt.com/collection/KT1UjcUAQWjNy4mYqUKwmBgEbu93aoos5qq5), an NFT marketplace built upon the Tezos cryptocurrency blockchain. This React app uses Objkt's API via graphQL to pull in data.
 
 ## Getting started
 

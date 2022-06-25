@@ -5,8 +5,8 @@ import ObjktCard from './ObjktCard'
 // React accessible tabs - https://github.com/reactjs/react-tabs.
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 // CSS modules.
-import card from '../styles/css/components/Card.module.css'
-import container from '../styles/css/components/Container.module.css'
+import card from '../styles/css/css-modules/Card.module.css'
+import container from '../styles/css/css-modules/Container.module.css'
 
 const ObjktRender = () => {
   // Define main data arrays, add more as needed.
@@ -28,7 +28,7 @@ const ObjktRender = () => {
         })
         // Define the data result.
         const result = queryResult.data.data
-        console.log(result)
+        // console.log(result)
         // Set the main data array.
         setData0({ objkts: result.fa[0].tokens })
         setData1({ objkts: result.fa[1].tokens })

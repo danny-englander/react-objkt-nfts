@@ -1,4 +1,5 @@
 @use "../../../../node_modules/sass-rem" as rem;
+@use "../utils" as *;
 
 p,
 li {

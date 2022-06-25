@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 // Settings file.
-@import "../component-settings";
+@use "../../../../node_modules/sass-rem" as rem;
+@use "../utils" as *;
 
 .Layout {
   max-width: 1420px;

@@ -1,7 +1,5 @@
 @use "../../../../node_modules/sass-rem" as rem;
-
-.react-tabs {
-}
+@use "../utils" as *;
 
 ul.react-tabs__tab-list {
   display: flex;

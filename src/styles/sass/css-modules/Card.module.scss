@@ -1,7 +1,7 @@
 @charset "utf-8";
 // Settings file.
 @use "../../../../node_modules/sass-rem" as rem;
-@import "../component-settings";
+@use "../utils" as *;
 
 .Elements {
   display: flex;

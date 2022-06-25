@@ -1,4 +1,5 @@
 @use "../../../../node_modules/sass-rem" as rem;
+@use "../utils" as *;
 
 // Global box sizing / border-box.
 // This improves things like flexbox and CSS grid working properly.

@@ -8,7 +8,7 @@ $grid-gutter: 50px !default;
 @mixin grid-before-after-table() {
   &:before,
   &:after {
-    content: '';
+    content: "";
     display: table;
   }
 }

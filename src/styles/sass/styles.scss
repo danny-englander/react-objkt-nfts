@@ -1,14 +1,5 @@
 // Make sure the charset is set appropriately.
 @charset "utf-8";
 
-// Settings file.
-@import "settings";
-@import "normalize";
-@import "mixins/mixins-sass-mq";
-@import "mixins/mixins-grid";
-@import "mixins/mixins";
-
-// Components.
-@import "components/tabs";
-@import "components/typography";
-@import "components/base";
+@use "normalize";
+@use "global";

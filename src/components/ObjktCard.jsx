@@ -14,13 +14,15 @@ const ObjktCard = ({ item, card }) => {
         />
 
         <div className={card.Content}>
-          <a
-            href={`https://objkt.com/asset/${item.fa.contract}/${item.token_id}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>{item.name}</h2>
-          </a>
+          <h2>
+            <a
+              href={`https://objkt.com/asset/${item.fa.contract}/${item.token_id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.name}
+            </a>
+          </h2>
 
           <p>{item.description}</p>
         </div>

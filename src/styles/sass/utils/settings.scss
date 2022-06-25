@@ -15,20 +15,6 @@ $c_dark_gray: #191919;
 $c_gold: #f5a42c;
 $c_brown: #532513;
 
-// Breakpoints map for sass MQ.
-$breakpoints: (
-  zero: 0,
-  narrow: 380px,
-  narrow_plus: 520px,
-  medium: 768px,
-  medium_plus: 920px,
-  large: 1024px,
-  large_plus: 1140px,
-  wide: 1280px,
-  wide_plus: 1440px,
-  mega_wide: 1600px,
-);
-
 // Hover and focus states.
 // Can be used like so: #{$a-tags-hover} {...
 $a-tags-hover: "&:active,&:focus,&:hover";

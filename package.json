@@ -29,7 +29,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-stylelint": "^13.0.0",
     "gulp-terser": "^2.0.1",
-    "netlify-cli": "^8.14.1",
+    "netlify-cli": "^10.6.2",
     "postcss": "^8.3.5",
     "sass": "^1.49.7",
     "sass-rem": "^3.0.0",
@@ -40,11 +40,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "netlify": "node_modules/.bin/netlify",
-    "dev": "node_modules/.bin/netlify dev"
+    "dev": "node_modules/.bin/netlify dev",
+    "gulp": "gulp"
   },
   "eslintConfig": {
     "extends": [
