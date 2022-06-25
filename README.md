@@ -2,7 +2,7 @@
 
 ![Screen Shot of the app](cover.png 'Screen Shot of the app')
 
-This project pulls in my artwork that is listed on Objkt.com, an NFT marketplace using their API via graphQL.
+This project pulls in my artwork that I have listed on [Objkt.com](https://objkt.com/collection/KT1UjcUAQWjNy4mYqUKwmBgEbu93aoos5qq5), an NFT marketplace. This React app uses Objkt's API via graphQL to pull in data.
 
 ## Getting started
 
@@ -10,7 +10,7 @@ You can read some general info about [getting started with React](React-README.m
 
 ## Install this project
 
-You should either be running Node version 16 or Node Version Manager. In the project directory, you can run:
+This app is now on React 18. You should either be running Node version 16 or Node Version Manager. In the project directory, you can run:
 
 ```bash
 nvm use
@@ -19,7 +19,7 @@ npm install
 
 Thereafter, you can run `npm run start` to open the webpage. If you want to change any CSS, you can run `gulp` in a separate terminal window.
 
-## Methodology
+## Methodology and API
 
 This project pulls in my own Objkt.com NFT collections as a sort of brochure site; that is to say, this does not have anything to do with NFT minting which is beyond the current scope of the project.
 
@@ -49,6 +49,7 @@ To view Objkt's API documentation, go to [https://data.objkt.com/docs/](https://
 - Implement responsive images
 - Implement webP image formats
 - Demo site on Netlify
+- Upgrade to Node18
 
 ## Roadmap
 
