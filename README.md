@@ -1,5 +1,7 @@
 # React Object.com NFTs
 
+![Screen Shot of the app](cover.png 'Screen Shot of the app')
+
 This project pulls in my artwork that is listed on Objkt.com, an NFT marketplace using their API via graphQL.
 
 ## Getting started
@@ -46,6 +48,7 @@ To view Objkt's API documentation, go to [https://data.objkt.com/docs/](https://
 - Use local images
 - Implement responsive images
 - Implement webP image formats
+- Demo site on Netlify
 
 ## Roadmap
 
