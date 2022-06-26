@@ -8,7 +8,7 @@ const Hero = () => {
         <div className={hero.Media}>
           <figure>
             <picture>
-              <source srcset="/assets/banner/banner.webp" type="image/webp" />
+              <source srcSet="/assets/banner/banner.webp" type="image/webp" />
 
               <img
                 className={hero.Banner}

@@ -14,6 +14,7 @@ li.react-tabs__tab {
   border: 1px solid transparent;
   outline: none;
   cursor: pointer;
+  // display: none;
 }
 
 li.react-tabs__tab--selected {
@@ -21,4 +22,9 @@ li.react-tabs__tab--selected {
   border: 1px solid $c_medium_gray;
   border-top: 3px solid $c_teal;
   border-bottom: 1px solid #fff;
+  display: block;
+}
+
+[data-rttab="true"] {
+  // display: block;
 }

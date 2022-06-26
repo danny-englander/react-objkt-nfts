@@ -1,8 +1,6 @@
 @use "../../../../node_modules/sass-rem" as rem;
 @use "../utils" as *;
 
-// Global box sizing / border-box.
-// This improves things like flexbox and CSS grid working properly.
 html {
   box-sizing: border-box;
   font-size: rem.convert(16px);
@@ -45,11 +43,32 @@ a {
   }
 }
 
-.spinner {
-  animation: App-logo-spin infinite 2s linear;
+.spinner-wrap {
+  min-height: 800px;
 }
 
-@keyframes App-logo-spin {
+.spinner {
+  animation: Object-Render infinite 1.9s linear;
+  background-image: url("../../assets/svg/spinner.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  position: absolute;
+  top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  > span {
+    @include visually-hidden();
+  }
+}
+
+@keyframes Object-Render {
   from {
     transform: rotate(0deg);
   }

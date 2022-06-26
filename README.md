@@ -86,6 +86,7 @@ To measure performance on this site, ensure you are using the production build w
 - <del>Implement webP image formats</del>
 - <del>Demo site on Netlify</del>
 - Upgrade to Node v18
+- <del>Lazy load ObjktRender using React Suspense</del>
 - Implement React Helmet for OG and Twitter card tags.
 
 ## Roadmap

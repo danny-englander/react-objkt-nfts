@@ -1,10 +1,11 @@
 import './App.css';
-import ObjktRender from './components/ObjktRender';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import './styles/css/styles.css'
-import React from 'react'
+import React, { Suspense } from 'react';
+
+const ObjktRender = React.lazy(() => import('./components/ObjktRender'));
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       <Header />
       <Hero />
       <main>
-        <ObjktRender />
+        <Suspense fallback={<div className="spinner-wrap"><div className="spinner"><span>Loading...</span></div></div>}>
+          <ObjktRender />
+        </Suspense>
       </main>
       <Footer />
     </div>
