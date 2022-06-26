@@ -5,26 +5,24 @@ const ObjktCard = ({ item, card }) => {
     <>
       <div className={card.ElementInner}>
         <picture>
-          <figure>
-            <source
-              srcSet={`/assets/nft-dist/${item.fa.contract}-${item.token_id}.jpg`}
-              media="(min-width: 320px)"
-              type="image/jpeg"
-            />
-            <source
-              srcSet={`/assets/nft-dist/${item.fa.contract}-${item.token_id}.webp`}
-              media="(max-width: 320px)"
-              type="image/webp"
-            />
-            <img
-              src={`/assets/nft-dist/${item.fa.contract}-${item.token_id}.jpg`}
-              className={card.Img}
-              alt={item.name}
-              width="800"
-              height="1000"
-              loading="lazy"
-            />
-          </figure>
+          <source
+            srcSet={`/assets/nft-dist/${item.fa.contract}-${item.token_id}.webp`}
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+          <source
+            srcSet={`/assets/nft-dist/${item.fa.contract}-${item.token_id}.jpg`}
+            media="(max-width: 320px)"
+            type="image/jpeg"
+          />
+          <img
+            src={`/assets/nft-dist/${item.fa.contract}-${item.token_id}.jpg`}
+            className={card.Img}
+            alt={item.name}
+            width="800"
+            height="1000"
+            loading="lazy"
+          />
         </picture>
 
         <div className={card.Content}>
