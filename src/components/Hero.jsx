@@ -1,6 +1,5 @@
 import React from 'react'
 import hero from '../styles/css/css-modules/Hero.module.css'
-import container from '../styles/css/css-modules/Container.module.css'
 
 const Hero = () => {
   return (
