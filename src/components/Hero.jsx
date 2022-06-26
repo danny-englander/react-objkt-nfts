@@ -14,7 +14,6 @@ const Hero = () => {
                 className={hero.Banner}
                 src="/assets/banner/banner.jpg"
                 alt="Objkt.com NFT Collections by Danny Englander"
-                loading="lazy"
                 width="1600"
                 height="333"
               />
