@@ -1,0 +1,12 @@
+@use "../../../../node_modules/sass-rem" as rem;
+@use "../utils" as *;
+
+.BG {
+  background-color: $c_dark_gray;
+  padding: 16px 0;
+}
+
+.Logo {
+  max-width: 100%;
+  height: auto;
+}

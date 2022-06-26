@@ -1,0 +1,39 @@
+@use "../../../../node_modules/sass-rem" as rem;
+@use "../utils" as *;
+
+.Wrap {
+  margin-bottom: 60px;
+}
+
+.Media {
+  border-bottom: 2px solid #a56fbd;
+}
+
+.Banner {
+  object-fit: cover;
+  width: 100%;
+  height: 280px;
+  object-position: top;
+  line-height: 0;
+}
+
+.TitleWrap {
+  padding: 10px 40px;
+  background-color: $c_light_teal;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+
+  @include mq($from: large) {
+    padding: 14px 0;
+  }
+}
+
+.Title {
+  margin: 0;
+
+  @include mq($from: large) {
+  }
+}
