@@ -7,10 +7,15 @@ const ObjktCard = ({ item, card }) => {
         <picture>
           <figure>
             <source
+              srcSet={`/assets/nft-dist/${item.fa.contract}-${item.token_id}.jpg`}
+              media="(min-width: 320px)"
+              type="image/jpeg"
+            />
+            <source
               srcSet={`/assets/nft-dist/${item.fa.contract}-${item.token_id}.webp`}
+              media="(max-width: 320px)"
               type="image/webp"
             />
-
             <img
               src={`/assets/nft-dist/${item.fa.contract}-${item.token_id}.jpg`}
               className={card.Img}
