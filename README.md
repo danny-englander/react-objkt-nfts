@@ -47,6 +47,24 @@ This points to the two smart contract ids for my collections. You can copy and p
 
 To view Objkt's API documentation, go to [https://data.objkt.com/docs/](https://data.objkt.com/docs/)
 
+## Image handing
+
+Currently, images are handled locally for better performance and responsiveness. For example, we can use API data to render the matching collection id image.
+
+```jsx
+img src={`/assets/nft-dist/${item.fa.contract}-${item.token_id}.jpg
+```
+
+If you want to pull images directly from the The InterPlanetary File System or IPFS, you could do something like this:
+
+```jsx
+img src={`https://ipfs.io/ipfs/${item.thumbnail_uri.slice(7)}`}
+```
+
+Be aware that pulling images from IPFS will severely degrade performance, even using Objkt's `thumbnail_uri` image.
+
+If you want to process images using gulp, place source images in a folder at `src/assets/nft-src` and then run gulp. Appropriately sized JPG and webP images will then be rendered at `public/assets/nft-dist` for use in this app. You should name images according to the contract and token id, for example, `KT1UjcUAQWjNy4mYqUKwmBgEbu93aoos5qq5-7.jpg` where the long string is the smart contract id and the `-7` is the token id of the NFT in your Objkt.com collection.
+
 ## CSS / SCSS
 
 This project implements the latest Sass module methods using `@use` and `@forward` dropping usage of the now legacy `@import` method.
@@ -68,6 +86,7 @@ To measure performance on this site, ensure you are using the production build w
 - <del>Implement webP image formats</del>
 - <del>Demo site on Netlify</del>
 - Upgrade to Node v18
+- Implement React Helmet for OG and Twitter card tags.
 
 ## Roadmap
 
