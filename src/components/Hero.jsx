@@ -6,19 +6,16 @@ const Hero = () => {
     <>
       <div className={hero.Wrap}>
         <div className={hero.Media}>
-          <figure>
-            <picture>
-              <source srcSet="/assets/banner/banner.webp" type="image/webp" />
-
-              <img
-                className={hero.Banner}
-                src="/assets/banner/banner.jpg"
-                alt="Objkt.com NFT Collections by Danny Englander"
-                width="1600"
-                height="333"
-              />
-            </picture>
-          </figure>
+          <picture>
+            <source srcSet="/assets/banner/banner.webp" type="image/webp" />
+            <img
+              className={hero.Banner}
+              src="/assets/banner/banner.jpg"
+              alt="Objkt.com NFT Collections by Danny Englander"
+              width="1600"
+              height="333"
+            />
+          </picture>
         </div>
 
         <div className={hero.TitleWrap}>

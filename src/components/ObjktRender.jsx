@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 import axios from 'axios'
 import * as Constants from './ObjktQuery'
-import ObjktCard from './ObjktCard'
 // React accessible tabs - https://github.com/reactjs/react-tabs.
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 // CSS modules.
 import card from '../styles/css/css-modules/Card.module.css'
 import container from '../styles/css/css-modules/Container.module.css'
+const ObjktCard = React.lazy(() => import('./ObjktCard'))
 
 const ObjktRender = () => {
   // Define main data arrays, add more as needed.
@@ -66,7 +66,17 @@ const ObjktRender = () => {
                   id={`item-${item.token_id}`}
                   className={`${card.Element}`}
                 >
-                  <ObjktCard card={card} item={item} />
+                  <Suspense
+                    fallback={
+                      <div className="spinner-wrap">
+                        <div className="spinner">
+                          <span>Loading...</span>
+                        </div>
+                      </div>
+                    }
+                  >
+                    <ObjktCard card={card} item={item} />
+                  </Suspense>
                 </li>
               ))}
             </ul>
@@ -82,7 +92,17 @@ const ObjktRender = () => {
                   id={`item-${item.token_id}`}
                   className={`${card.Element}`}
                 >
-                  <ObjktCard card={card} item={item} />
+                  <Suspense
+                    fallback={
+                      <div className="spinner-wrap">
+                        <div className="spinner">
+                          <span>Loading...</span>
+                        </div>
+                      </div>
+                    }
+                  >
+                    <ObjktCard card={card} item={item} />
+                  </Suspense>
                 </li>
               ))}
             </ul>
